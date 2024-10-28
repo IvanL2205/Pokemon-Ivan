@@ -7,23 +7,11 @@ import '@bbva-experience-components/bbva-button-default/bbva-button-default.js';
 import '@bbva-web-components/bbva-web-card-product/bbva-web-card-product.js';
 import '@bbva-experience-components/bbva-type-text/bbva-type-text.js';
 import '@bbva-web-components/bbva-foundations-spinner/bbva-foundations-spinner.js';
-/**
- * ![LitElement component](https://img.shields.io/badge/litElement-component-blue.svg)
- *
- * This component ...
- *
- * Example:
- *
- * ```html
- *   <pokemon-list></pokemon-list>
- * ```
- */
+import '@pokemones/pokemon-dm/pokemon-dm.js'
+
 export class PokemonList extends LitElement {
   static get properties() {
     return {
-      /**
-       * Description for property
-       */
       pokemonList: { type: Array },
       title: { type: String },
     };
@@ -132,6 +120,7 @@ export class PokemonList extends LitElement {
               </div>
             `}
       </div>
+      <pokemon-dm></pokemon-dm>
     `;
   }
   

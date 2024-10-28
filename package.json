@@ -24,6 +24,7 @@
     "@bbva-web-components/bbva-web-card-product": "^1.6.3",
     "@bbva-web-components/bbva-web-link": "^1.7.0",
     "@cells-demo/demo-app-template": "^1.1.0",
+    "@pokemones/pokemon-dm":"git+https://github.com/IvanL2205/pokemon-dm.git#main",
     "lit-element": "^2.0.0",
     "lit-html": "^1.0.0"
   },
