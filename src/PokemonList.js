@@ -24,6 +24,11 @@ export class PokemonList extends LitElement {
     this.loading = false; 
   }
 
+  async firstUpdated(){
+    const pokemonDm = this.shadowRoot.querySelector('pokemon-dm');
+    this.pokemon = await pokemonDm.fetchPokemon();
+  }
+
   static get styles() {
     return [
       styles,
