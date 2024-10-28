@@ -99,18 +99,22 @@ export class PokemonList extends LitElement {
                   (pokemon) => html`
                     <div class="pokemon-container">
                       <div class="pokemon-card">
+                      <!-- Imagen pokemon --!>
                         <img
                           class="pokemon-image"
                           slot="media"
                           src="${pokemon.sprites.front_default}"
                           alt="${pokemon.name}"
                         />
+                        <!-- Nombre pokemon --!>
                         <bbva-type-text
                           class="pokemon-name"
                           slot="title"
                           text="${pokemon.name}"
                           size="L"
                         ></bbva-type-text>
+
+                        <!-- Tipo pokemon --!>
                         <div class="pokemon-type" slot="details">
                           ${pokemon.types.map(
                             (typeInfo) => html`<span>${typeInfo.type.name}</span>`
